@@ -1,0 +1,420 @@
+/**
+ * header 样式
+ */
+div.header>span{
+    background: pink;
+    height: 57px;
+    width: 100%;
+}
+div.brand_header{
+    height: 57px;
+    width: 1190px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dcd2bc;
+}
+div.brand_header>a{
+    width: 122px;
+    height: 57px;
+    float: left;
+    background: url("../img/share/cncn_logo.png") 0 0 no-repeat;
+}
+div.brand_header_right{
+    height: 57px;
+    float: right;
+}
+div.brand_header_right>ul{
+    height: 57px;
+    float: left;
+}
+div.brand_header_right>ul>li{
+    height: 57px;
+    line-height: 55px;
+    float: left;
+    margin: 0 10px;
+}
+div.brand_header_right>ul>li:first-child>a{
+    border-bottom: 2px solid #77cb4d;
+    color: #77cb4d;
+}
+div.brand_header_right>ul>li>a{
+    font-size: 16px;
+    display: block;
+    height: 55px;
+    padding: 0 5px;
+    color: #6e6e6e;
+}
+/**
+ * banner 心形
+ */
+.banner{
+    background: url("../img/share/banner.jpg") no-repeat 50% center;
+    display: inline-block;
+    height: 552px;
+    position: relative;
+    width: 100%;
+}
+@keyframes heart {
+    0%{transform: scale(0.1)}
+    35%{transform: scale(0.1)}
+    50%{transform: scale(0.15)}
+    66%{transform: scale(0.12)}
+    84%{transform: scale(0.15)}
+    100%{transform: scale(0.1)}
+}
+.icon_banner_heart{
+    background: url("../img/share/xin.png") no-repeat;
+    display: inline-block;
+    height: 208px;
+    left: 185px;
+    position: absolute;
+    top: 212px;
+    width: 254px;
+    transform: scale(0.15);
+    animation: heart 1.5s ease-in infinite;
+}
+/**
+ * top_menu 导航栏的样式
+ */
+.top_menu{
+    background: #f8f8f8;
+    /*border-bottom: #eeeeee solid 2px;*/
+    height: 125px;
+    left: 0;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+}
+.top_menu ul{
+    color: #666;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 auto;
+    padding-left: 8px;
+    padding-top: 22px;
+    text-align: center;
+    width: 1200px;
+}
+.top_menu ul>li{
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    width: 148px;
+}
+.top_menu ul>li.on,.top_menu ul>li.on_light{
+    color: #f77304;
+}
+.top_menu ul>li.on i{
+    background: url("../img/share/top_list_menu_on.png") no-repeat;
+}
+.top_menu ul>li.on_light i{
+    background: url("../img/share/top_list_menu_f.png") no-repeat;
+}
+.icon_pic1,.icon_pic2,.icon_pic3,.icon_pic4,.icon_pic5,.icon_pic6,.icon_pic7,.icon_pic8{
+    background: url("../img/share/top_list_menu.png") no-repeat;
+    display: inline-block;
+    height: 62px;
+    width: 62px;
+}
+.top_menu ul>li>span{
+    border-bottom: #f8f8f8 solid 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 148px;
+}
+.fixed_nav{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+/**
+ * anchor 锚点
+ */
+.anchor_title>i{
+    background: #f77304 url("../img/share/top_list_menu_f.png") no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px #FAA761;
+    margin-top: -31px;
+}
+.anchor_title{
+    background: #E3E5E5;
+    color: #f77304;
+    font-size: 30px;
+    height: 1px;
+    line-height: 30px;
+    margin: 110px auto;
+    width: 100%;
+}
+
+/**
+ * 旅游顾问 部分 icon_pic1_section
+ */
+.icon_pic1_section{
+    background: url("../img/share/guwen_bg.png") center #8ae1dc no-repeat;
+    height: 2300px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+/*dialog的触发区域*/
+.dialog a{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    color: #fff;
+    font-size: 18px;
+}
+/*dialog会话框的样式*/
+.dialog .dialog_style{
+    position: absolute;
+    background: #ffffff;
+    border: #e05a3e solid 3px;
+    color: #e05a3e;
+    font-size: 14px;
+    width: 190px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    left: -40px;
+    bottom: 30px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: .5s ;
+}
+.dialog .dialog_style i{
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    margin-left: -10px;
+    background: url("../img/share/jian.png");
+}
+/*car*/
+.car{
+    background: url("../img/share/che.png");
+    width: 105px;
+    height: 75px;
+    position: absolute;
+    top: 694px;
+    left: 100px;
+    transform-origin: bottom;
+    animation: car 6s linear infinite;
+}
+@keyframes car {
+    0%{transform: translateX(-180px);opacity: 0;}
+    15%{transform: translateX(40px);opacity: 1;}
+    19%{transform: translateX(30px) scale(0.95,1.05);}
+    23%{transform: translateX(40px);}
+    27%{transform: translateX(30px) scale(0.95,1.05);}
+    31%{transform: translateX(40px);}
+    35%{transform: translateX(30px) scale(0.95,1.05);}
+    40%{transform: translateX(40px);}
+    45%{transform: translateX(30px) scale(0.95,1.05);}
+    55%{transform: translateX(40px);}
+    80%{transform: translateX(600px);opacity: 1;}
+    100%{transform: translateX(600px);opacity: 0;}
+}
+.car .c1{
+    background: url("../img/share/che1.png");
+    width: 39px;
+    height: 31px;
+    position: absolute;
+    margin: 26px 0 0 -46px;
+    transform-origin: right;
+    animation: c1 1.5s ease-in-out infinite;
+}
+@keyframes c1 {
+    0%{transform: translateX(20px) scale(0.5);opacity: 0;}
+    50%{transform: translateX(-10px) scale(1);opacity: 1;}
+    100%{transform: translateX(-50px) scale(1);opacity: 0;}
+}
+.car .c2{
+    background: url("../img/share/che2.png");
+    width: 75px;
+    height: 57px;
+    position: absolute;
+    margin: -35px 0 0 105px;
+    transform-origin: left bottom;
+    animation: c2 6s ease-in-out infinite;
+}
+@keyframes c2 {
+    0%{opacity: 0}
+    15%{transform: rotate(-40deg);opacity: 0;}
+    20%{transform: rotate(0deg);opacity: 1;}
+    50%{transform: rotate(0deg);opacity: 1;}
+    55%{transform: rotate(-40deg);opacity: 0;}
+    100%{transform: translateX(600px);opacity: 0;}
+}
+/*plane*/
+.plane{
+    background: url("../img/share/feiji.png");
+    width: 171px;
+    height: 97px;
+    position: absolute;
+    top: 1054px;
+    left: 43px;
+    transform-origin: right bottom;
+    animation: plane 5s ease-in-out infinite;
+}
+@keyframes plane {
+    0%{transform: translate(50px,30px) scale(0.5);opacity: 0;}
+    40%{transform: translate(-30px,-20px) scale(1);opacity: 1;}
+    100%{transform: translate(-50px,-40px) scale(1.2);opacity: 0;}
+}
+/*jump_sack*/
+.jump_sack{
+    background: url("../img/share/jiangluo.png");
+    width: 74px;
+    height: 86px;
+    position: absolute;
+    top: 1151px;
+    left: 55px;
+    animation: jump_sack 3s ease-in-out infinite;
+}
+@keyframes jump_sack {
+    0%{transform: scale(1);}
+    50%{transform: translateY(-15px);}
+    100%{transform: scale(1);}
+}
+/*bicycle*/
+.bicycle{
+    background: url("../img/share/zixingche.png");
+    width: 132px;
+    height: 115px;
+    position: absolute;
+    top: 1280px;
+    left: 950px;
+    transform-origin: top right;
+    animation: bicycle 8s ease-in-out infinite;
+}
+@keyframes bicycle {
+    0%{transform: translateX(0) scale(0.5);opacity: 0.5;}
+    30%{transform: translateX(-100px) scale(1);opacity: 1;}
+    65%{transform: translateX(-500px) scale(1);opacity: 1;}
+    80%{transform: translateX(-530px) scale(1);opacity: 0;}
+    100%{transform: translateX(-550px) scale(1);opacity: 0;}
+}
+/*family*/
+.family{
+    background: url("../img/share/yijia.png");
+    width: 139px;
+    height: 136px;
+    position: absolute;
+    top: 2025px;
+    left: 773px;
+    transform-origin: bottom;
+    animation: family 2s ease-in-out infinite;
+}
+@keyframes family {
+    0%{transform: scale(1);}
+    50%{transform: translateY(-5px);}
+    100%{transform: scale(1);}
+}
+.anchor .icon_pic1_footer{
+    height: 406px;
+    background: url("../img/share/man.png") center #0edace no-repeat;
+}
+.anchor .icon_pic1_footer a{
+    width: 670px;
+    height: 406px;
+    margin: auto;
+    display: block;
+}
+
+/**
+ * 优质供应链 部分 icon_pic2_section
+ */
+.icon_pic2_section1>img{
+    display: block;
+    width: 1196px;
+    height: 1458px;
+    margin: 0 auto;
+    border: 0;
+}
+.icon_pic2_section2>img{
+    display: block;
+    width: 961px;
+    height: 1097px;
+    margin: 50px auto;
+}
+/**
+ * 资源覆盖 部分 icon_pic3_section
+ */
+.icon_pic3_section{
+    padding: 50px 0 70px 0;
+    background: #f9f9f9;
+}
+.icon_pic3_section>img{
+    display: inline;
+    width: 1100px;
+    height: 854px;
+    border: 0;
+}
+
+/**
+ * 保障体系 部分 icon_pic4_section
+ */
+.icon_pic4_section>p{
+    font-size: 30px;
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 70px;
+    padding-top: 40px;
+}
+.icon_pic4_section>img{
+    display: inline;
+    border: 0;
+}
+/**
+ * 品牌文化 部分 icon_pic5_section
+ */
+.icon_pic5_section>img{
+    display: inline-block;
+    border: 0;
+    width: 946px;
+    height: 1124px;
+}
+/**
+ * 品牌荣誉 部分 icon_pic2_section
+ */
+.icon_pic6_section>img{
+    display: block;
+    float: left;
+    margin-left: 105px;
+    width: 314px;
+    height: 225px;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/**
+ * 品牌联盟 部分 icon_pic2_section
+ */
+.icon_pic7_section>img{
+    display: inline;
+    border: 0;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
